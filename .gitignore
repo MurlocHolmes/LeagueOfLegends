@@ -1,0 +1,9 @@
+/apiconfig.py
+.DS_Store
+.idea/misc.xml
+.idea/modules.xml
+.idea/webscraper.iml
+.idea/workspace.xml
+leagueoflegends/
+xkcd/
+/download_xkcd.py

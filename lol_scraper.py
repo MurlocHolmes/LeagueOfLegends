@@ -2,6 +2,7 @@
 
 import os
 import requests
+import apiconfig
 
 
 def download_image(_file_path, _image_url, _res):
@@ -20,7 +21,7 @@ square_url = 'http://ddragon.leagueoflegends.com/cdn/6.6.1/img/champion/'
 os.makedirs('leagueoflegends', exist_ok=True)
 
 # Grab the API data and place it into the response object. Then grab its 'data' property and place it into champions
-url = 'https://global.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=2bf25f2b-c0bd-4781-9a52-1cc9307bb0f3'
+url = 'https://global.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=' + apiconfig.APIKEY
 res = requests.get(url)
 champions = res.json()['data']
 for champion in champions:
