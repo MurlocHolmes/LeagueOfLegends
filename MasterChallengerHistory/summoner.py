@@ -12,6 +12,8 @@ class Summoner:
         self.player_id = jsonSummoner['playerOrTeamId']
         self.wins = jsonSummoner['wins']
         self.losses = jsonSummoner['losses']
+        self.league_name = None
+        self.tier = None
 
     def getName(self):
         return self.name
@@ -37,12 +39,21 @@ class Summoner:
     def getLosses(self):
         return self.losses
 
+    def getTier(self):
+        return self.tier
+
+    def getLeagueName(self):
+        return self.league_name
+
     def printAll(self):
-        print("Name: " + self.getName())
-        print("LP: " + self.getLP())
-        print("New: " + self.getNew())
-        print("Hot Streak: " + self.getHotStreak())
-        print("Veteran: " + self.getVeteran())
-        print("Player ID: " + self.getPlayerID())
-        print("Wins: " + self.getWins())
-        print("Losses: " + self.getLosses())
+        print("Name: " + str(self.getName()))
+        print("LP: " + str(self.getLP()))
+        print("New: " + str(self.getNew()))
+        print("Hot Streak: " + str(self.getHotStreak()))
+        print("Veteran: " + str(self.getVeteran()))
+        print("Player ID: " + str(self.getPlayerID()))
+        print("Wins: " + str(self.getWins()))
+        print("Losses: " + str(self.getLosses()))
+        print("Tier: " + str(self.getTier()))
+        print("League Name: " + str(self.getLeagueName()))
+        print("\n")

@@ -5,3 +5,5 @@
 .idea/webscraper.iml
 .idea/workspace.xml
 leagueoflegends/
+ImageDownloader/apiconfig.py
+MasterChallengerHistory/apiconfig.py
